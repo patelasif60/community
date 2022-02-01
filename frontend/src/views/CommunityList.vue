@@ -1,5 +1,8 @@
 <template>
     <div class="row">
+         <div class="col-12">
+           <router-link  class="btn btn-sm btn-primary float-end" to="/community">Create</router-link>
+        </div>
         <div class="col-12">
             <div class="table-responsive-sm">
                 <h2>Questions</h2>
@@ -18,7 +21,6 @@
                             <td>{{item.title}}</td>
                             <td>{{item.content}}</td>
                             <td>
-                                <router-link  class="btn btn-sm btn-primary" to="/">Edit</router-link>
                                 <a href="#" @click.prevent="deleteRecord(item.id)" class="btn btn-sm btn-danger">Delete</a>
                             </td>
                         </tr>
